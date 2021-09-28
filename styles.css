@@ -1,0 +1,51 @@
+section {
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+section:nth-of-type(even) {
+  background-color: #000000;
+}
+
+.the-pen {
+  background-image: url(assets/the-pen.svg);
+}
+
+.is-mightier {
+  background-image: url(assets/is-mightier.svg);
+}
+
+.than {
+  background-image: url(assets/than.svg);
+}
+
+.the-sword {
+  background-image: url(assets/the-sword.svg);
+}
+
+.end {
+  background-image: url(assets/end.svg);
+  background-color: #00F10A;
+}
+
+footer {  
+  position: fixed;
+	bottom: 30px;
+  left: 0;
+	width: 100%;
+  text-align: center;
+}
+
+/* 
+   NOTE: this bit of code below is called a media query. 
+   You'll learn more about media queries in the next project,
+   so feel free to skip this part if it doesn't make sense yet! 
+*/
+@media (max-width: 800px) {
+  section {
+    background-attachment: scroll;
+  }
+}
